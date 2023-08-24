@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
+
+            <div class="search-box">
+                <img src="images/search.png" alt="">
+                <input type="text" placeholder="search">
+            </div>
+
+        </div>
+        <div class="navbar-center">
+            <ul>
+                <li><a href="#"><img src="images/home.png"  alt=""><span>Home</span></a></li>
+                <li><a href="#"><img src="images/network.png" alt=""><span>My Network</span></a></li>
+                <li><a href="#"><img src="images/jobs.png" alt=""><span>Jobs</span></a></li>
+                <li><a href="#"><img src="images/message.png" alt=""><span>Messages</span></a></li>
+                <li><a href="#"><img src="images/notification.png" alt=""><span>Notification</span></a></li>
+
+            </ul>
+        </div>
+        <div class="navbar-right">
+            
+            <div class="online">
+                <img src="images/user-1.png" class="nav-prof-img" onclick="togglemenu()">
+            </div>
+        </div>
+
+        <!-- --------profile dropdown menu------ -->
+        <div class="prof-menu-wrap" id="profileMenu">
+            <div class="prof-menu">
+              <div class="user-info">
+               <img src="images/user-1.png" alt=" user" onclick="toggleMenu">
+                <div>
+                    <h3> Rayan Walton</h3>
+                    <a href="bootstrap.html">See your profile</a>
+                </div>
+              </div>
+              
+              <a href="#" class="prof-menu-link">
+                <img src="images/feedback.png" alt="feedback">
+                <p>Give Feedback</p>
+                <span> > </span>
+              </a>
+             
+              <a href="#" class="prof-menu-link">
+                <img src="images/setting.png" alt="settings">
+                <p>Settings&Privacy</p>
+                <span> > </span>
+              </a>
+              
+              <a href="#" class="prof-menu-link">
+                <img src="images/help.png" alt="help">
+                <p>Help & Support</p>
+                <span> > </span>
+              </a>
+              
+              <a href="#" class="prof-menu-link">
+                <img src="images/display.png" alt="displaycolor">
+                <p>Display & Access</p>
+                <span> > </span>
+              </a>
+              
+              <a href="#" class="prof-menu-link">
+                <img src="images/logout.png" alt="logout">
+                <p>Log Out</p>
+                <span> > </span>
+              </a>
+            </div>
+        </div>
+
+
+
+
+    </nav>
+    <!-- ---------------NAVBAR ENDS-------------- -->
+    <div class="container">
+        <!-- left-sidebar -->
+        <div class="left-sidebar">
+            <div class="sidebar-prof-box">
+                <img src="images/cover-pic.png" width="250px">
+                <div class="sidebar-prof-info">
+                    <img src="images/user-1.png">
+                    <h1>Sinan Shehzab</h1>
+                    <h3>Web developer</h3>
+                    <ul>
+                        <li>Your profile views <span>52</span></li>
+                        <li>YOur Post Views <span>512</span></li>
+                        <li>Your COnnections <span>400</span></li>
+                    </ul>
+              </div> 
+              <div class="sidebar-prof-link">
+                <a href="#"><img src="images/items.png" alt="">My Items</a>
+                <a href="#"><img src="images/premium.png" alt="">Try Premium</a>
+              </div>
+            </div>
+            <div class="sidebar-activity" id="sidebarActivity">
+                <h3>RECENT</h3>
+                <a href="#"><img src="images/recent.png" alt="">Web Development</a>
+                <a href="#"><img src="images/recent.png" alt="">User Interface</a>
+                <a href="#"><img src="images/recent.png" alt="">Online Learning</a>
+                <a href="#"><img src="images/recent.png" alt="">Learn Coding</a>
+                <a href="#"><img src="images/recent.png" alt="">Code Better</a>
+                <a href="#"><img src="images/recent.png" alt="">Self Learning</a>
+                <h3>Groups</h3>
+                <a href="#"><img src="images/group.png" alt="">Webdesign group</a>
+                <a href="#"><img src="images/group.png" alt="">Github speaks</a>
+                <a href="#"><img src="images/group.png" alt="">Development wardrobe</a>
+                <a href="#"><img src="images/group.png" alt="">Mern developers </a>
+                <h3>HASHTAG</h3>
+                <a href="#"><img src="images/hashtag.png" alt="">webdevelopers</a>
+                <a href="#"><img src="images/hashtag.png" alt="">userinterface</a>
+                <a href="#"><img src="images/hashtag.png" alt="">onlinelearning</a>
+                <div class="dicover-more-link">
+                    <a href="#">Discover more</a>
+                </div>
+            </div>
+            <p id="moreLink" href="#" onclick="toggleActivity()">Show more <b>+</b></p>
+        </div>
+        <!-- main-content -->
+        <div class="main-content">
+
+            <div class="create-post">
+                <div class="create-post-input">
+                    <img src="images/user-1.png" alt="userimage">
+                    <textarea  rows="2" placeholder="Create a post"></textarea>
+                </div>
+                <div class="create-post-links">
+                    <li><img src="images/photo.png" alt=""></li>
+                    <li><img src="images/video.png" alt=""></li>
+                    <li><img src="images/event.png" alt=""></li>
+                    <li>Post</li>
+                </div> 
+            </div>
+            <div class="sort-by">
+                <hr>
+                <p>Sort by: <span>top <img src="images/down-arrow.png" alt=""></span></p>
+            </div>
+            <!-- -------------post--------------- -->
+
+            <div class="post">
+                <div class="post-author">
+                    <img src="images/user-3.png" alt="user 3">
+                    <div>
+                        <h1>Benjamin</h1>
+                        <small>founer and CEO of galileo company</small>
+                        <small>2 hours ago</small>
+                    </div>
+
+                </div>
+                <p>The success of every website depends on search engine optimisation and 
+                    digital marketing strategy.If you are on first page of all major search engines
+                    then you are ahead among your competitors.
+                </p>
+                <img src="images/post-image-1.png" alt="" width="100%">
+
+                   <div class="post-status">
+                         <div>
+                        <span>22 comments &middot; 40 shares </span>
+                    </div>
+                    </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="images/user-1.png" alt="user" class="post-activity-user-icon">
+                        <img src="images/down-arrow.png" alt="user" class="post-activity-arrow-icon">
+                    </div>
+
+                        <div class="post-activity-link">
+                            <i class="material-symbols-outlined">thumb_up</i>
+                        </div>
+                         <div class="post-activity-link">
+                            <i class="material-symbols-outlined">comment</i>
+                        </div>
+                        <div class="post-activity-link">
+                            <i class="material-symbols-outlined">repeat</i>
+                        </div>
+                          <div class="post-activity-link">
+                        <i class="material-symbols-outlined">send</i>
+                          
+                        </div>
+                   
+                </div>
+                   
+
+            </div>
+            <!-- ----------------------post end----------- -->
+            <!-- ---------------------2ndpost------------- -->
+            <div class="post">
+                <div class="post-author">
+                    <img src="images/user-2.png" alt="user 3">
+                    <div>
+                        <h1>Mark</h1>
+                        <small>founer and CEO of galileo company</small>
+                        <small>2 hours ago</small>
+                    </div>
+
+                </div>
+                <p>The success of every website depends on search engine optimisation and 
+                    digital marketing strategy.If you are on first page of all major search engines
+                    then you are ahead among your competitors.
+                </p>
+                <img src="images/post-image-2.png" alt="" width="100%">
+
+                   <div class="post-status">
+                         <div>
+                        <span>22 comments &middot; 40 shares </span>
+                    </div>
+                    </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="images/user-1.png" alt="user" class="post-activity-user-icon">
+                        <img src="images/down-arrow.png" alt="user" class="post-activity-arrow-icon">
+                    </div>
+
+                        <div class="post-activity-link">
+                            <i class="material-symbols-outlined">thumb_up</i>
+                        </div>
+                         <div class="post-activity-link">
+                            <i class="material-symbols-outlined">comment</i>
+                        </div>
+                        <div class="post-activity-link">
+                            <i class="material-symbols-outlined">repeat</i>
+                        </div>
+                          <div class="post-activity-link">
+                        <i class="material-symbols-outlined">send</i>
+                          
+                        </div>
+                   
+                </div>
+                   
+
+            </div>
+            <!-- -----------post end----------- -->
+            <!-- ---------------------3rdpost------------- -->
+            <div class="post">
+                <div class="post-author">
+                    <img src="images/user-3.png" alt="user 3">
+                    <div>
+                        <h1>Mark</h1>
+                        <small>founer and CEO of galileo company</small>
+                        <small>2 hours ago</small>
+                    </div>
+
+                </div>
+                <p>The success of every website depends on search engine optimisation and 
+                    digital marketing strategy.If you are on first page of all major search engines
+                    then you are ahead among your competitors.
+                </p>
+                <img src="images/post-image-3.png" alt="" width="100%">
+
+                   <div class="post-status">
+                         <div>
+                        <span>22 comments &middot; 40 shares </span>
+                    </div>
+                    </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="images/user-1.png" alt="user" class="post-activity-user-icon">
+                        <img src="images/down-arrow.png" alt="user" class="post-activity-arrow-icon">
+                    </div>
+
+                        <div class="post-activity-link">
+                            <i class="material-symbols-outlined">thumb_up</i>
+                        </div>
+                         <div class="post-activity-link">
+                            <i class="material-symbols-outlined">comment</i>
+                        </div>
+                        <div class="post-activity-link">
+                            <i class="material-symbols-outlined">repeat</i>
+                        </div>
+                          <div class="post-activity-link">
+                        <i class="material-symbols-outlined">send</i>
+                          
+                        </div>
+                   
+                </div>
+                   
+
+            </div>
+            <!-- -----------post end----------- -->
+            <!-- ---------------------4thpost------------- -->
+            <div class="post">
+                <div class="post-author">
+                    <img src="images/user-4.png" alt="user 3">
+                    <div>
+                        <h1>Mark</h1>
+                        <small>founer and CEO of galileo company</small>
+                        <small>2 hours ago</small>
+                    </div>
+
+                </div>
+                <p>The success of every website depends on search engine optimisation and 
+                    digital marketing strategy.If you are on first page of all major search engines
+                    then you are ahead among your competitors.
+                </p>
+                <img src="images/post-image-4.png" alt="" width="100%">
+
+                   <div class="post-status">
+                         <div>
+                        <span>22 comments &middot; 40 shares </span>
+                    </div>
+                    </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="images/user-1.png" alt="user" class="post-activity-user-icon">
+                        <img src="images/down-arrow.png" alt="user" class="post-activity-arrow-icon">
+                    </div>
+
+                        <div class="post-activity-link">
+                            <i class="material-symbols-outlined">thumb_up</i>
+                        </div>
+                         <div class="post-activity-link">
+                            <i class="material-symbols-outlined">comment</i>
+                        </div>
+                        <div class="post-activity-link">
+                            <i class="material-symbols-outlined">repeat</i>
+                        </div>
+                          <div class="post-activity-link">
+                        <i class="material-symbols-outlined">send</i>
+                          
+                        </div>
+                   
+                </div>
+                   
+
+            </div>
+            <!-- -----------post end----------- -->
+            <!-- ---------------------5thpost------------- -->
+            <div class="post">
+                <div class="post-author">
+                    <img src="images/user-5.png" alt="user 3">
+                    <div>
+                        <h1>Mark</h1>
+                        <small>founer and CEO of galileo company</small>
+                        <small>2 hours ago</small>
+                    </div>
+
+                </div>
+                <p>The success of every website depends on search engine optimisation and 
+                    digital marketing strategy.If you are on first page of all major search engines
+                    then you are ahead among your competitors.
+                </p>
+                <img src="images/post-image-3.png" alt="" width="100%">
+
+                    <div class="post-status">
+                         <div>
+                        <span>22 comments &middot; 40 shares </span>
+                    </div>
+                    </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="images/user-1.png" alt="user" class="post-activity-user-icon">
+                        <img src="images/down-arrow.png" alt="user" class="post-activity-arrow-icon">
+                    </div>
+
+                        <div class="post-activity-link">
+                            <i class="material-symbols-outlined">thumb_up</i>
+                        </div>
+                         <div class="post-activity-link">
+                            <i class="material-symbols-outlined">comment</i>
+                        </div>
+                        <div class="post-activity-link">
+                            <i class="material-symbols-outlined">repeat</i>
+                        </div>
+                          <div class="post-activity-link">
+                        <i class="material-symbols-outlined">send</i>
+                          
+                        </div>
+                   
+                </div>
+                   
+
+            </div>
+            <!-- -----------post end----------- -->
+
+
+
+
+
+
+
+
+        </div>
+        <!-- right-sidebar -->
+        <div class="right-sidebar">
+            <div class="sidebar-news">
+                <img src="images/more.png" class="info-icon">
+                <h3>Trending News</h3>
+                <a href="#">High demand for skilled manpower</a>
+                <span>1day ago &middot; 10,356 readers</span>
+
+                 <a href="#">everyone looking forward to the developers</a>
+                <span>5days ago &middot; 1m readers</span>
+
+                 <a href="#">Hiring: Higher confidence? </a>
+                <span>7days ago &middot; 92,2309 readers</span>
+
+                 <a href="#">Careers Growing Horizontally</a>
+                <span>1day ago &middot; 8000 readers</span>
+
+                 <a href="#">Giving up Already?</a>
+                <span>3hours ago &middot; 10,456 readers</span>
+                <div class="link-read">
+                <a href="#"  >Read more</a>
+                </div>
+            </div>
+
+            <div class="sidebar-ad">
+                <small>Ad &middot; &middot; &middot; </small>
+                <p>Master the 5 principles of web designing</p>
+                <div>
+                    <img src="images/user-1.png" alt="">
+                    <img src="images/mi-logo.png" alt="">
+                </div>
+                <b>Brand and Demand in Xiaomi</b>
+                <a href="#" class="ad-link">Learn more</a>
+            </div>
+                <div class="sidebar-usseful-links">
+                    <a href="#">About</a>
+                    <a href="#">Accessibility</a>
+                    <a href="#">Help Center</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Get the App</a>
+                    <a href="#">More</a>
+
+
+
+                    <div class="copyright-msg">
+                        <img src="images/logo.png" alt="logo">
+                        <p>Linkedup &#169; 2023.All right reserved</p>
+                    </div>
+                </div>
+        </div>
+    </div>
+  
+
+    <!--   dropdown script -->
+<script>
+    let profileMenu = document.getElementById("profileMenu");
+
+    function togglemenu() {
+        profileMenu.classList.toggle("open-menu");
+    }
+    
+</script>
+<!-- show more scirpt -->
+ 
+<script>
+    let sidebarActivity = document.getElementById("sidebarActivity");
+    let showMoreLink = document.getElementById("showMoreLink");
+
+ function toggleActivity() {
+ 
+  
+  sidebarActivity.classList.toggle("open-activity");
+  
+  if (sidebarActivity.classList.contains("open-activity")) {
+    moreLink.innerHTML = "Show less <b>-</b>";
+  } else {
+    moreLink.innerHTML = "Show more <b>+</b>";
+  }
+}
+
+
+
+
+
+</script>
+</body>
+</html>

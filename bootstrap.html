@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Clone</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+    
+    <!-- Bootstrap Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="navbar-left">
+            <a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
+
+            <div class="search-box">
+                <img src="images/search.png" alt="">
+                <input type="text" placeholder="search">
+            </div>
+
+        </div>
+        <div class="navbar-center">
+            <ul>
+                <li><a href="#"><img src="images/home.png"  alt=""><span>Home</span></a></li>
+                <li><a href="#"><img src="images/network.png" alt=""><span>My Network</span></a></li>
+                <li><a href="#"><img src="images/jobs.png" alt=""><span>Jobs</span></a></li>
+                <li><a href="#"><img src="images/message.png" alt=""><span>Messages</span></a></li>
+                <li><a href="#"><img src="images/notification.png" alt=""><span>Notification</span></a></li>
+
+            </ul>
+        </div>
+        <div class="navbar-right">
+            
+            <div class="online">
+                <img src="images/user-1.png" class="nav-prof-img" onclick="togglemenu()">
+            </div>
+        </div>
+
+        <!-- --------profile dropdown menu------ -->
+        <div class="prof-menu-wrap" id="profileMenu">
+            <div class="prof-menu">
+              <div class="user-info">
+               <img src="images/user-1.png" alt=" user" onclick="toggleMenu">
+                <div>
+                    <h3> Rayan Walton</h3>
+                    <a href="profile.html">See your profile</a>
+                </div>
+              </div>
+              
+              <a href="#" class="prof-menu-link">
+                <img src="images/feedback.png" alt="feedback">
+                <p>Give Feedback</p>
+                <span> > </span>
+              </a>
+             
+              <a href="#" class="prof-menu-link">
+                <img src="images/setting.png" alt="settings">
+                <p>Settings&Privacy</p>
+                <span> > </span>
+              </a>
+              
+              <a href="#" class="prof-menu-link">
+                <img src="images/help.png" alt="help">
+                <p>Help & Support</p>
+                <span> > </span>
+              </a>
+              
+              <a href="#" class="prof-menu-link">
+                <img src="images/display.png" alt="displaycolor">
+                <p>Display & Access</p>
+                <span> > </span>
+              </a>
+              
+              <a href="#" class="prof-menu-link">
+                <img src="images/logout.png" alt="logout">
+                <p>Log Out</p>
+                <span> > </span>
+              </a>
+            </div>
+        </div>
+        
+    </nav>
+
+
+    <div class="container">
+        <div class="profile-main">
+            <div class="prof-container">
+                <img src="images/cover-pic.png" alt="user" width="100%">
+                <div class="prof-container-inner">
+                    <img src="images/user-1.png" alt="user" class="prof-pic">
+                    <h1>Sinan Shehzab</h1>
+                    <b>WebDeveloper</b>
+                    <p>Kerala,India <a href="#">Contact Info</a></p>
+
+                    <div class="mutual-connection">
+                        <img src="images/user-3.png" alt="">
+                        <span>1 Mutual Connection : Helen </span>
+                    </div>
+                    <div class="prof-btn">
+                        <a href="#" class="primary-btn"><img src="images/connect.png" alt="connect">Connect</a>
+                        <a href="#"><img src="images/chat.png" alt="chat">Chat</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-description">
+                <h2>About</h2>
+                <p>
+                    👋 Hi there! I'm Abdulla Sinan Shehzab, a web development student with a passion for creating dynamic online experiences. With a background in coding and design, I'm dedicated to mastering the art of web development. <br>
+
+                    🌟 My journey into the world of web development has been an exciting one. From experimenting with HTML/CSS to building interactive projects, I've learned the power of turning ideas into reality online. I thrive on continuous learning and am committed to refining my skills to bring innovative ideas to life. <br>
+
+                    🚀 As a web development enthusiast, I'm honing my skills in HTML, CSS, and JavaScript. My approach involves creating clean and efficient code to craft user-friendly interfaces that leave an impact. <br>
+             </p>
+                <a href="#" class="see-more-link">Read More...</a>
+            </div>
+            <div class="profile-description">
+                <h2>Experience</h2>
+                <div class="Prof-desc-row">
+                    <img src="images/microsoft.png" alt="microsoft">
+                    <div>
+                         <h3>WebDeveloper</h3>
+                        <b>Self Learner</b>
+                        <b>May 2023 - Present &middot; 4months</b>
+                        <p>I'm a passionate web developer with a knack for crafting captivating online experiences. Through a mastery of HTML, CSS, and JavaScript, I bring visions to life and ensure seamless functionality. With each line of code, I'm dedicated to leaving a lasting digital impact that reflects my commitment to both creativity and technical expertise.</p>
+                        <hr>
+                    </div>
+                </div>
+
+                 <div class="Prof-desc-row">
+                    <img src="images/microsoft.png" alt="microsoft">
+                    <div>
+                         <h3>WebDeveloper</h3>
+                        <b>Self Learner</b>
+                        <b>May 2023 - Present &middot; 4months</b>
+                        <p>I'm a passionate web developer with a knack for crafting captivating online experiences. Through a mastery of HTML, CSS, and JavaScript, I bring visions to life and ensure seamless functionality. With each line of code, I'm dedicated to leaving a lasting digital impact that reflects my commitment to both creativity and technical expertise.</p>
+                        <hr>
+                    </div>
+                </div>
+
+                 <div class="Prof-desc-row">
+                    <img src="images/microsoft.png" alt="microsoft">
+                    <div>
+                         <h3>WebDeveloper</h3>
+                        <b>Self Learner</b>
+                        <b>May 2023 - Present &middot; 4months</b>
+                        <p>I'm a passionate web developer with a knack for crafting captivating online experiences. Through a mastery of HTML, CSS, and JavaScript, I bring visions to life and ensure seamless functionality. With each line of code, I'm dedicated to leaving a lasting digital impact that reflects my commitment to both creativity and technical expertise.</p>
+                        <hr>
+                    </div>
+                </div>
+                
+                <a href="#" class="exprnc-link">Show all & experiences, <img src="images/right-arrow.png" alt="arrow"></a>
+            </div>
+            <div class="profile-description">
+                <h2>Education</h2>
+                <div class="Prof-desc-row">
+                    <img src="images/stanford.png" alt="institute">
+                    <div> 
+                        <h3>Online Manipal</h3>
+                        <b>Bachelor of Computer Applications</b>
+                        <b>2023 - Present</b>
+                        <hr>
+                    </div>
+               </div>
+                <div class="Prof-desc-row">
+                    <img src="images/stanford.png" alt="institute">
+                    <div> 
+                        <h3>CJHSS Chemnad</h3>
+                        <b> Comp &middot; science</b>
+                        <b>2020 - 2022</b>
+                        <hr>
+                    </div>
+               </div>
+
+                <div class="Prof-desc-row">
+                    <img src="images/stanford.png" alt="institute">
+                    <div> 
+                        <h3>CJHSS Chemnad</h3>
+                        <b>SSLC</b>
+                        <b>2017 - 2020</b>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-description">
+                <h2>Skills</h2>
+                <a href="#" class="skills-btn">Leadership</a>                
+                <a href="#" class="skills-btn">WebDevelopment</a>
+                <a href="#" class="skills-btn">Planning</a>
+                <a href="#" class="skills-btn">Coding</a>
+                <a href="#" class="skills-btn">JavaScript</a>
+                <a href="#" class="skills-btn">Bootstrap</a>
+            </div>
+             <div class="profile-description">
+                <h2>Languages</h2>
+               <a href="#" class="lang-btn">Malayalam</a>
+                <a href="#" class=" lang-btn">English</a>                
+                <a href="#" class="lang-btn">Hindi</a>
+                <a href="#" class="lang-btn">Tamil</a>
+            </div>
+        </div>
+                
+            </div>
+            
+        </div>
+    </div>
+
+    
+  
+
+    
+    <script>
+    let profileMenu = document.getElementById("profileMenu");
+
+    function togglemenu() {
+        profileMenu.classList.toggle("open-menu");
+    }
+    
+</script>
+
+   
+</body>
+</html>
